@@ -3,9 +3,11 @@ import { HomeScreen } from '../screens/Home/HomeScreen';
 import { ProfileScreen } from '../screens/profile/ProfileScreen';
 import { SettingsScreen } from '../screens/settings/SettingsScreen';
 import { Text } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+
 
 const Tab = createBottomTabNavigator();
-
+// const count = useCounterStore(state => state.count)
 export const BottomTab = ()=> {
   return (
     <Tab.Navigator>
@@ -15,3 +17,4 @@ export const BottomTab = ()=> {
     </Tab.Navigator>
   );
 }
+
